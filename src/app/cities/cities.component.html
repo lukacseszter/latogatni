@@ -1,0 +1,22 @@
+<h2 class="text-center mt-3">Városok</h2>
+<div class="container table-center">
+    <table class="table table-striped">
+        <thead class="bg-succes text-info">
+            <tr>
+                <th>Név</th>
+                <th>Megye</th>
+                <th>Terület (km2)</th>
+                <th>Népesség (fő)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let cities of cities">
+                <td>{{cities.name}}</td>
+                <td>{{cities.county}}</td>
+                <td>{{cities.area}}</td>
+                <td>{{cities.population}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
